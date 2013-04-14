@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/HealthLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/Health_FakeLinearLayout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ScrollView
+        android:id="@+id/Health_OutputScroll"
+        android:layout_width="450dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/edit_text"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TextView
+            android:id="@+id/Health_Output"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <include
+        android:id="@+id/WoundLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/Health_OutputScroll"
+        layout="@layout/health" />
+
+    <include
+        android:id="@+id/HealthInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/WoundLayout"
+        layout="@layout/health_input" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/simulator_menu_simulate"
+        android:title="@string/simulator_menu_simulate"/>
+    <item
+        android:id="@+id/simulator_menu_edit"
+        android:title="@string/simulator_menu_edit"/>
+    <item
+        android:id="@+id/simulator_menu_delete"
+        android:title="@string/simulator_menu_delete"/>
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/HealthScroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="outsideOverlay" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/HealthTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableLayout>
+
+        <Button
+            android:id="@+id/health_apply_penalties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HealthTable"
+            android:layout_alignRight="@+id/HealthTable"
+            android:text="@string/health_apply_penalties" />
+    </RelativeLayout>
+
+</ScrollView>

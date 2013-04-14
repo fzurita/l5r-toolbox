@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TempModScroll"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:scrollbarStyle="outsideOverlay" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/roll_penalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mod_roll_penalty"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/RollPenaltyText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/roll_penalty"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/keep_penalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roll_penalty"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/RollPenaltyText"
+            android:text="@string/mod_keep"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/KeepPenaltyText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roll_penalty"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/keep_penalty"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/static_penalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mod_static_penalty"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/StaticPenaltyText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/static_penalty"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/roll_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/RollPenaltyText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/mod_roll_bonus"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/RollBonusText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/roll_bonus"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/keep_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roll_bonus"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/RollPenaltyText"
+            android:text="@string/mod_keep"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/KeepBonusText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roll_bonus"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/keep_penalty"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/static_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/StaticPenaltyText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/mod_static_bonus"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/StaticBonusText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/static_bonus"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/FulllAttackCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/StaticBonusText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/mod_full_attack"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/VPCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/StaticBonusText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/mod_vp_bonus"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/DiceToKeepRadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/VPCheckbox"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/KeepHighestRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod_highest"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/KeepLowestRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod_lowest"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/SaveCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/VPCheckbox"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/mod_save"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</ScrollView>

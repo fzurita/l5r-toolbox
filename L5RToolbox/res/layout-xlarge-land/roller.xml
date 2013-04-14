@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RollerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/OutputScroll"
+        android:layout_width="450dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/edit_text"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TextView
+            android:id="@+id/RollerOutput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/DrawerLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/RollScroll" >
+
+        <com.misc.WrappingSlidingDrawer
+            android:id="@+id/SlidingDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:content="@+id/RollModFragment"
+            android:handle="@+id/DrawerHandle" >
+
+            <TextView
+                android:id="@+id/DrawerHandle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/slider_handle_color"
+                android:padding="10dp"
+                android:text="@string/roller_mods_full"
+                android:textColor="@android:id/color/white" />
+
+            <fragment
+                android:id="@+id/RollModFragment"
+                android:name="l5r.toolbox.rollmods.RollModFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.misc.WrappingSlidingDrawer>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/RollScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/OutputScroll"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/RollTable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/FakeLinearLayout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+</RelativeLayout>

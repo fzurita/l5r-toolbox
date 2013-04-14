@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/simulator_menu_new"
+          android:icon="@android:drawable/ic_menu_add"
+          android:title="New"
+          android:showAsAction="always" />
+    <item android:id="@+id/simulator_menu_quick"
+          android:icon="@android:drawable/ic_menu_recent_history"
+          android:title="Quick"
+          android:showAsAction="always" />
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Orange" parent="Theme.Sherlock">
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Styled.TabBar</item>
+        <item name="android:actionBarTabBarStyle"> @style/Widget.Styled.TabBar</item>
+        <item name="actionBarTabStyle">@style/Widget.Styled.TabView</item>
+        <item name="android:actionBarTabStyle">@style/Widget.Styled.TabView </item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/slider_handle_color</item>
+        <item name="android:background">@drawable/slider_handle_color</item>
+        <item name="backgroundSplit">@drawable/slider_handle_color</item>
+        <item name="android:backgroundSplit">@drawable/slider_handle_color</item>
+    </style>
+
+    <style name="Widget.Styled.TabView" parent="Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_view_color</item>
+    </style>
+
+    <style name="Widget.Styled.TabBar" parent="Widget.Sherlock.Light.ActionBar.TabBar">
+        <item name="android:background">@drawable/tab_bar_color</item>
+    </style>
+
+</resources>

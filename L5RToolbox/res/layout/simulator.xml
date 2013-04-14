@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SimulatorLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/Simulator_OutputScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/edit_text"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TextView
+            android:id="@+id/Simulator_RollerOutput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:typeface="sans" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/Simulator_RollScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/SimulatorTnText"
+        android:layout_below="@+id/Simulator_OutputScroll"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/Simulator_RollTable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Simulator_FakeLinearLayout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/Simulator_TN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SimulatorTnText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/simulator_tn"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/SimulatorTnText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Simulator_TN"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="3"
+        android:selectAllOnFocus="true"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RollerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/TopLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="325dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/OutputScroll"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/edit_text"
+            android:scrollbarStyle="outsideOverlay" >
+
+            <TextView
+                android:id="@+id/RollerOutput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </ScrollView>
+
+        <fragment
+            android:id="@+id/RollModFragment"
+            android:name="l5r.toolbox.rollmods.RollModFragment"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/RollScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/TopLayout"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/RollTable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/FakeLinearLayout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+</RelativeLayout>
